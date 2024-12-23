@@ -13,11 +13,10 @@
 
 
 ## Team Info
-
-|      고병수       |          허세진         |       한동규                                                                                                                     
-| :------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | 
-|   <img width="160px"  src="https://avatars.githubusercontent.com/u/107296751?v=4" />    |                      <img width="160px" src="https://avatars.githubusercontent.com/u/58739539?v=4" />    |                   <img width="160px" src="https://avatars.githubusercontent.com/u/79791066?v=4"/>   | <img width="160px" src="https://avatars.githubusercontent.com/u/116639627?v=4"/> |
-|   [@eclipse1228](https://github.com/eclipse1228)   |    [@jelly1500](https://github.com/jelly1500)  | [@dongkyu20](https://github.com/dongkyu20)  |
+|      고병수       |          허세진         |       한동규         |
+| :----------------: | :---------------------: | :------------------: |
+| <img width="160px" src="https://avatars.githubusercontent.com/u/107296751?v=4" /> | <img width="160px" src="https://avatars.githubusercontent.com/u/58739539?v=4" /> | <img width="160px" src="https://avatars.githubusercontent.com/u/79791066?v=4" /> |
+| [@eclipse1228](https://github.com/eclipse1228) | [@jelly1500](https://github.com/jelly1500) | [@dongkyu20](https://github.com/dongkyu20) |
 | 동아대학교 컴퓨터공학과 3학년 | 동아대학교 컴퓨터공학과 3학년 | 동아대학교 컴퓨터공학과 3학년 |
 
 ## 프로젝트 소개 
