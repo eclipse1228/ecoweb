@@ -1716,3 +1716,108 @@
 2024-11-28 17:29:17,432 INFO:127.0.0.1 - - [28/Nov/2024 17:29:17] "[33mGET /static/images/20241118131843.png HTTP/1.1[0m" 404 -
 2024-11-28 17:29:17,437 INFO:127.0.0.1 - - [28/Nov/2024 17:29:17] "[33mGET /static/images/20241118161726.png HTTP/1.1[0m" 404 -
 2024-11-28 17:30:02,924 INFO:127.0.0.1 - - [28/Nov/2024 17:30:02] "GET /badge HTTP/1.1" 200 -
+2025-02-04 18:54:04,478 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 18:54:04,478 INFO:[33mPress CTRL+C to quit[0m
+2025-02-04 18:54:04,480 INFO: * Restarting with stat
+2025-02-04 18:54:23,968 WARNING: * Debugger is active!
+2025-02-04 18:54:23,978 INFO: * Debugger PIN: 179-909-972
+2025-02-04 18:54:24,444 INFO:127.0.0.1 - - [04/Feb/2025 18:54:24] "GET / HTTP/1.1" 200 -
+2025-02-04 18:54:32,612 INFO:127.0.0.1 - - [04/Feb/2025 18:54:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-04 18:55:09,622 INFO:127.0.0.1 - - [04/Feb/2025 18:55:09] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 18:55:09,707 INFO:127.0.0.1 - - [04/Feb/2025 18:55:09] "GET /carbon_calculate_emission HTTP/1.1" 200 -
+2025-02-04 18:58:51,628 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 18:58:52,501 INFO: * Restarting with stat
+2025-02-04 19:07:16,362 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 19:07:16,362 INFO:[33mPress CTRL+C to quit[0m
+2025-02-04 19:07:16,364 INFO: * Restarting with stat
+2025-02-04 19:07:34,433 WARNING: * Debugger is active!
+2025-02-04 19:07:34,443 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:07:34,911 INFO:127.0.0.1 - - [04/Feb/2025 19:07:34] "GET / HTTP/1.1" 200 -
+2025-02-04 19:08:27,697 INFO:127.0.0.1 - - [04/Feb/2025 19:08:27] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:08:28,079 INFO:127.0.0.1 - - [04/Feb/2025 19:08:28] "[32mGET /carbon_calculate_emission HTTP/1.1[0m" 302 -
+2025-02-04 19:08:28,337 INFO:127.0.0.1 - - [04/Feb/2025 19:08:28] "GET / HTTP/1.1" 200 -
+2025-02-04 19:09:00,940 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\services\\emissions_calculator.py', reloading
+2025-02-04 19:09:02,232 INFO: * Restarting with stat
+2025-02-04 19:09:20,701 WARNING: * Debugger is active!
+2025-02-04 19:09:20,712 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:09:21,266 INFO:127.0.0.1 - - [04/Feb/2025 19:09:21] "GET / HTTP/1.1" 200 -
+2025-02-04 19:10:47,898 INFO:127.0.0.1 - - [04/Feb/2025 19:10:47] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:10:48,238 INFO:127.0.0.1 - - [04/Feb/2025 19:10:48] "[32mGET /carbon_calculate_emission HTTP/1.1[0m" 302 -
+2025-02-04 19:10:48,488 INFO:127.0.0.1 - - [04/Feb/2025 19:10:48] "GET / HTTP/1.1" 200 -
+2025-02-04 19:11:17,091 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:11:18,113 INFO: * Restarting with stat
+2025-02-04 19:11:42,396 WARNING: * Debugger is active!
+2025-02-04 19:11:42,432 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:11:44,263 INFO:127.0.0.1 - - [04/Feb/2025 19:11:44] "GET / HTTP/1.1" 200 -
+2025-02-04 19:12:12,953 INFO:127.0.0.1 - - [04/Feb/2025 19:12:12] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:12:13,069 INFO:127.0.0.1 - - [04/Feb/2025 19:12:13] "GET /carbon_calculate_emission HTTP/1.1" 200 -
+2025-02-04 19:12:33,483 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:12:34,617 INFO: * Restarting with stat
+2025-02-04 19:12:52,528 WARNING: * Debugger is active!
+2025-02-04 19:12:52,541 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:12:56,772 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:12:57,913 INFO: * Restarting with stat
+2025-02-04 19:13:15,718 WARNING: * Debugger is active!
+2025-02-04 19:13:15,727 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:13:40,678 INFO:127.0.0.1 - - [04/Feb/2025 19:13:40] "GET / HTTP/1.1" 200 -
+2025-02-04 19:14:06,990 INFO:127.0.0.1 - - [04/Feb/2025 19:14:06] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:14:07,031 INFO:127.0.0.1 - - [04/Feb/2025 19:14:07] "GET /carbon_calculate_emission HTTP/1.1" 200 -
+2025-02-04 19:16:06,178 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:16:07,300 INFO: * Restarting with stat
+2025-02-04 19:16:24,797 WARNING: * Debugger is active!
+2025-02-04 19:16:24,808 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:16:50,753 INFO:127.0.0.1 - - [04/Feb/2025 19:16:50] "GET / HTTP/1.1" 200 -
+2025-02-04 19:17:19,721 INFO:127.0.0.1 - - [04/Feb/2025 19:17:19] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:17:19,776 INFO:127.0.0.1 - - [04/Feb/2025 19:17:19] "GET /carbon_calculate_emission HTTP/1.1" 200 -
+2025-02-04 19:20:14,651 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:20:15,616 INFO: * Restarting with stat
+2025-02-04 19:20:34,261 WARNING: * Debugger is active!
+2025-02-04 19:20:34,281 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:20:36,892 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:20:37,901 INFO: * Restarting with stat
+2025-02-04 19:20:55,769 WARNING: * Debugger is active!
+2025-02-04 19:20:55,780 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:20:56,315 INFO:127.0.0.1 - - [04/Feb/2025 19:20:56] "GET / HTTP/1.1" 200 -
+2025-02-04 19:21:46,303 INFO:127.0.0.1 - - [04/Feb/2025 19:21:46] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:21:46,363 INFO:127.0.0.1 - - [04/Feb/2025 19:21:46] "GET /carbon_calculate_emission HTTP/1.1" 200 -
+2025-02-04 19:46:23,937 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:46:24,977 INFO: * Restarting with stat
+2025-02-04 19:46:45,721 WARNING: * Debugger is active!
+2025-02-04 19:46:45,735 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:46:54,162 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:46:55,136 INFO: * Restarting with stat
+2025-02-04 19:47:18,324 WARNING: * Debugger is active!
+2025-02-04 19:47:18,361 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:47:19,676 INFO:127.0.0.1 - - [04/Feb/2025 19:47:19] "GET / HTTP/1.1" 200 -
+2025-02-04 19:47:55,492 INFO:127.0.0.1 - - [04/Feb/2025 19:47:55] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:47:55,579 INFO:127.0.0.1 - - [04/Feb/2025 19:47:55] "GET /carbon_calculate_emission HTTP/1.1" 200 -
+2025-02-04 19:49:02,477 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:49:03,435 INFO: * Restarting with stat
+2025-02-04 19:49:54,006 INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-04 19:49:54,007 INFO:[33mPress CTRL+C to quit[0m
+2025-02-04 19:49:54,014 INFO: * Restarting with stat
+2025-02-04 19:50:12,452 WARNING: * Debugger is active!
+2025-02-04 19:50:12,463 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:50:13,289 INFO:127.0.0.1 - - [04/Feb/2025 19:50:13] "GET / HTTP/1.1" 200 -
+2025-02-04 19:50:49,179 INFO:127.0.0.1 - - [04/Feb/2025 19:50:49] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:50:49,213 INFO:127.0.0.1 - - [04/Feb/2025 19:50:49] "[32mGET /carbon_calculate_emission HTTP/1.1[0m" 302 -
+2025-02-04 19:50:49,544 INFO:127.0.0.1 - - [04/Feb/2025 19:50:49] "GET / HTTP/1.1" 200 -
+2025-02-04 19:52:18,002 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:52:18,854 INFO: * Restarting with stat
+2025-02-04 19:52:39,682 WARNING: * Debugger is active!
+2025-02-04 19:52:39,694 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:53:09,249 INFO:127.0.0.1 - - [04/Feb/2025 19:53:09] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:53:09,297 INFO:127.0.0.1 - - [04/Feb/2025 19:53:09] "[32mGET /carbon_calculate_emission HTTP/1.1[0m" 302 -
+2025-02-04 19:53:09,366 INFO:127.0.0.1 - - [04/Feb/2025 19:53:09] "GET / HTTP/1.1" 200 -
+2025-02-04 19:55:22,860 INFO:127.0.0.1 - - [04/Feb/2025 19:55:22] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:55:23,310 INFO:127.0.0.1 - - [04/Feb/2025 19:55:23] "GET /carbon_calculate_emission HTTP/1.1" 200 -
+2025-02-04 19:55:59,641 INFO: * Detected change in 'C:\\ecoweb\\ecoweb\\app\\routes.py', reloading
+2025-02-04 19:56:00,823 INFO: * Restarting with stat
+2025-02-04 19:56:19,708 WARNING: * Debugger is active!
+2025-02-04 19:56:19,720 INFO: * Debugger PIN: 179-909-972
+2025-02-04 19:56:20,314 INFO:127.0.0.1 - - [04/Feb/2025 19:56:20] "GET / HTTP/1.1" 200 -
+2025-02-04 19:56:49,869 INFO:127.0.0.1 - - [04/Feb/2025 19:56:49] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-02-04 19:56:49,901 INFO:127.0.0.1 - - [04/Feb/2025 19:56:49] "GET /carbon_calculate_emission HTTP/1.1" 200 -

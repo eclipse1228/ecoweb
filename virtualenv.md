@@ -13,7 +13,6 @@ Scripts/activate # 윈도우에서 가상환경 활성화
 # deactivate (가상환경 비활성화)
 ```
 가상환경 활성화 이후 
-
 ```python
 - requirements.txt 설치하기 (다시 root 로 돌아가야함)
 pip install -r requirements.txt

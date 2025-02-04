@@ -16,6 +16,7 @@ WORLD_AVERAGE_INTENSITY = 494
 ELECTRICITY_DATA_CENTER_O = 0.055  
 ELECTRICITY_NETWORK_O = 0.059
 ELECTRICITY_USER_DEVICE = 0.080
+
 #EMBODIED WATT (kWh/GB)
 ELECTRICITY_EMBODIED = 0.012
 ELECTRICITY_EMBODIED_NETWORK = 0.013
@@ -46,7 +47,6 @@ def calculate_embodied_emissions(data_transmission_traffic):
     embodied_emissions = embodied_o + network_o + user_device_o
     return embodied_o, network_o, user_device_o
 
-
 def estimate_emission_per_page(
     data_gb,
     new_visitor_ratio=1.0,
@@ -55,9 +55,9 @@ def estimate_emission_per_page(
     green_host_factor=0.0,
     ):
     # 1) 운영 배출
-    op_dc, op_net, op_ud = calculate_operation_emissions(data_gb, carbon_intensity)
+    op_dc, op_net, op_ud = calculate_operation_emissions(data_gb)
     # 2) 내재 배출
-    em_dc, em_net, em_ud = calculate_embodied_emissions(data_gb, carbon_intensity)
+    em_dc, em_net, em_ud = calculate_embodied_emissions(data_gb)
     
     # 데이터 센터 운영 배출에서 그린호스팅 비율 적용
     op_dc_adjusted = adjust_for_green_hosting(op_dc, green_host_factor)

@@ -30,7 +30,7 @@ from flask import send_file
 import shutil
 from flask import send_from_directory, current_app
 from app.ProjectMaker.code_optimizer import code_optimizer, getCodeSize_before, getCodeSize_after
-
+from app.services.emissions_calculator import estimate_emission_per_page
 ZIP_FILE_PATH = "/"
 
 load_dotenv()
@@ -233,31 +233,29 @@ def init_routes(app):
             kb_weight = view_data['total_byte_weight'] / 1024
             session['kb_weight'] = kb_weight
             # 탄소 배출량 계산 (0.04 kWh/GB * 442g CO2/kWh)
-            carbon_emission = round((kb_weight * 0.04) / 272.51, 3)
+            carbon_emission = round(estimate_emission_per_page(kb_weight/(1024*1024)),2)
             # MB로 변환하여 평균과 비교
             mb_weight = kb_weight / 1024
-            global_avg_diff = round(mb_weight - 2.4, 2)  # 세계 평균 2.4MB 기준
-            session['global_avg_carbon'] = 0.36
-            korea_avg_diff = round(mb_weight - 4.7, 2)   # 한국 평균 4.7MB 기준
-            session['korea_avg_carbon'] = 0.70
+            # global_avg_diff = round(mb_weight - 2.4, 2)  # 세계 평균 2.4MB 기준
+            session['global_avg_carbon'] = round(estimate_emission_per_page(0.002344),2)
+            # korea_avg_diff = round(mb_weight - 4.7, 2)   # 한국 평균 4.7MB 기준
+            session['korea_avg_carbon'] = round(estimate_emission_per_page(0.00456),2)
             session['carbon_emission'] = carbon_emission
             korea_diff = session['korea_avg_carbon'] - carbon_emission
-            korea_diff_abs = abs(round(korea_diff, 2))
+            korea_diff_abs = round(abs(korea_diff),2)
             global_diff = session['global_avg_carbon'] - carbon_emission
-            global_diff_abs = abs(round(global_diff, 2))
-            session['global_diff'] = global_diff
-            session['korea_diff'] = korea_diff
-            session['global_diff_abs'] = global_diff_abs
-            session['korea_diff_abs'] = korea_diff_abs
+            global_diff_abs = round(abs(global_diff),2)
+            session['global_diff'] = round(global_diff,2)
+            session['korea_diff'] = round(korea_diff,2)
+            session['global_diff_abs'] = round(global_diff_abs,2)
+            session['korea_diff_abs'] = round(korea_diff_abs,2)
             print("Rendering template with data - carbon_emission: {}, grade: {}".format(carbon_emission, grade))
-            
+
             return render_template('carbon_calculate_emission.html',
                                 url=url,
                                 view_data=view_data,
                                 grade=grade,
                                 carbon_emission=carbon_emission,
-                                global_avg_diff=global_avg_diff,
-                                korea_avg_diff=korea_avg_diff,
                                 global_avg_carbon=session['global_avg_carbon'],
                                 korea_avg_carbon=session['korea_avg_carbon'],
                                 kb_weight=kb_weight,

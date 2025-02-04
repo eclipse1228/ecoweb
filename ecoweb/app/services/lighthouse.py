@@ -3,9 +3,10 @@ import subprocess
 import os
 
 def run_lighthouse(url):
-    # 아래는 리눅스 환경에서 동작하지 않아서 폐기예정(정확도가 떨어지지만 어쩔 수 없다. -> 근데 스크린샷 문제는 아직 해결 못함. (터미널에서 어떻게 스크린샷을 찍음..))
-    # command = f'lighthouse {url} --only-audits=network-requests,resource-summary,third-party-summary,script-treemap-data,total-byte-weight,unused-css-rules,unused-javascript,modern-image-formats,efficient-animated-content,duplicated-javascript,js-libraries --output json --output-path ./report.json --preset=desktop'
-    command = f'lighthouse {url} --chrome-flags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage" --only-audits=network-requests,resource-summary,third-party-summary,script-treemap-data,total-byte-weight,unused-css-rules,,unused-javascript,modern-image-formats,efficient-animated-content,duplicated-javascript,js-libraries --output json --output-path ./report.json --preset=desktop'
+    # Windows version
+    command = f'lighthouse {url} --only-audits=network-requests,resource-summary,third-party-summary,script-treemap-data,total-byte-weight,unused-css-rules,unused-javascript,modern-image-formats,efficient-animated-content,duplicated-javascript,js-libraries --output json --output-path ./report.json --preset=desktop'
+    # Linux Headless version
+    # command = f'lighthouse {url} --chrome-flags="--headless --no-sandbox --disable-gpu --disable-dev-shm-usage" --only-audits=network-requests,resource-summary,third-party-summary,script-treemap-data,total-byte-weight,unused-css-rules,,unused-javascript,modern-image-formats,efficient-animated-content,duplicated-javascript,js-libraries --output json --output-path ./report.json --preset=desktop'
 
     subprocess.run(command, shell=True)
 
