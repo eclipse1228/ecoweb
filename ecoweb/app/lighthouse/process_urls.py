@@ -13,6 +13,8 @@ collection_resource = db['lighthouse_resource']
 
 def run_lighthouse(url):
     command = f'lighthouse {url} --only-audits=network-requests,resource-summary,third-party-summary,script-treemap-data,total-byte-weight,unused-css-rules,unused-javascript,modern-image-formats,efficient-animated-content,duplicated-javascript,js-libraries --output json --output-path ./report.json --preset=desktop'
+    # Linux Headless version
+    # command = f'lighthouse {url} --only-audits=network-requests,resource-summary,third-party-summary,script-treemap-data,total-byte-weight,unused-css-rules,unused-javascript,modern-image-formats,efficient-animated-content,duplicated-javascript,js-libraries --output json --output-path ./report.json --preset=desktop --chrome-flags="--headless --no-sandbox"'
     subprocess.run(command, shell=True)
 
 def process_report(url):

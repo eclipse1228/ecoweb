@@ -30,6 +30,7 @@ For building and running the application you need:
 - [Python 3.10.12](https://www.python.org/downloads/release/python-31012/)
 - [Lighthouse 9.1.1](https://github.com/GoogleChrome/lighthouse/releases/tag/v9.1.1)
 - other libraries in [requirements.txt](requirements.txt)
+- mongodb
 
 ### Installation
 #### github repo

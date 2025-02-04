@@ -6,13 +6,10 @@ import cv2
 import os
 import shutil
 
-
-
 result = []
 current_dir = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(current_dir, 'image_classifier_model_6.h5')
 model = tf.keras.models.load_model(model_path)
-
 
 # 이미지 업스케일 함수 (고급 보간법 사용)
 def preprocess_image(img_path, target_size=(224, 224)):

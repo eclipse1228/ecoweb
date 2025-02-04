@@ -1,6 +1,5 @@
 from threading import Thread
 import uuid
-
 from flask import render_template, request, redirect, url_for
 from app.utils.grade import (grade_point)
 from app.services.screenshot import capture_screenshot
@@ -416,7 +415,6 @@ def init_routes(app):
     def world_analysis():
         return render_template('world_analysis.html')
     
-
     # 다운로드 zip파일
     @app.route('/download-webp')
     def download_webp():
